@@ -40,6 +40,10 @@ ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/
 service apache2 restart
 
 ######## Can only run the command line install if the DB is already up ############
-# Also, requires the address of the DB node
-# php -f install.php --license_agreement_accepted "yes" --locale "en_US" --timezone "America/Los_Angeles" --default_currency "USD" --db_host "<DB_HOST>" --db_name "<DB_NAME>" --db_user "<DB_UNAME>" --db_pass "<DB_PASS>" --url "<SITE_URL>" --use_rewrites "yes" --use_secure "no" --secure_base_url "" --use_secure_admin "no" --admin_firstname "<ADMIN_FIRST>" --admin_lastname "<ADMIN_LAST>" --admin_email "<ADMIN_EMAIL>" --admin_username "<ADMIN_UNAME>" --admin_password "<ADMIN_PASS>"
-
+php -f install.php -- --license_agreement_accepted yes \
+ --locale en_US --timezone "America/Los_Angeles" --default_currency USD \
+ --db_host <DB_HOST> --db_name <DB_NAME> --db_user <DB_UNAME> --db_pass <DB_PASS> \
+ --url "http://<APACHE_HOST>/" --use_rewrites yes \
+ --use_secure no --secure_base_url "" --use_secure_admin no \
+ --admin_lastname <ADMIN_LAST> --admin_firstname <ADMIN_FIRST> --admin_email "<ADMIN_EMAIL>" \
+ --admin_username <ADMIN_UNAME> --admin_password <ADMIN_PASS> > credit_key.txt

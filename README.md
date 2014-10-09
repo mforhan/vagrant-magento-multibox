@@ -13,7 +13,7 @@ These files should be stored in ./packages/ for sync mounting to the vagrant ima
 
 Installation Steps
 ------------------
-<ol>
+<ul>
 <li>Edit config.sh</li>
 <ul>
 	<li>Add appropriate values</li>
@@ -34,7 +34,7 @@ Installation Steps
 <ul>
 	<li> verify php install.php command options</li>
 </ul>
-</ol>
+</ul>
 dbnode
 ------
 MySQL server installation. This includes enabling remote access to the database and the setup of a user/database for magento.
