@@ -5,9 +5,9 @@ Vagrant files for creating a multibox deploy of Magento. This configuration will
 
 Prerequsites
 ------------
-*AppFirst installation package
-*Magento installation package
-*[Optional] Magento sample data package
+<p>AppFirst installation package</p>
+<p>Magento installation package</p>
+<p>[Optional] Magento sample data package</p>
 
 These files should be stored in ./packages/ for sync mounting to the vagrant image
 
@@ -34,7 +34,7 @@ Installation Steps
 <ul>
 	<li> verify php install.php command options</li>
 </ul>
-<ol>
+</ol>
 dbnode
 ------
 MySQL server installation. This includes enabling remote access to the database and the setup of a user/database for magento.
@@ -43,8 +43,8 @@ webnode
 -------
 Apache2 install with mpm-prefork as setup by the magento install tutorial. Eventually I'll provide an alternative mpm-worker version as I work out the deployment details. 
 
-default web user: vagrant
-default web directory: /home/vagrant/magento
+<p>default web user: vagrant</p>
+<p>default web directory: /home/vagrant/magento</p>
 
 TODO
 ----
