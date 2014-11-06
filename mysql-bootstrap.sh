@@ -33,3 +33,6 @@ rm -rf magento-sample-data-1.9.0.0/ magento-sample-data-1.9.0.0.tar.gz
 sed -i 's/bind-address/#bind-address/' /etc/mysql/my.cnf
 service mysql restart
 
+# Update the init file so all logs and tags are applied
+cp ~vagrant/packages/AppFirst.init.db /etc/AppFirst.init
+service afcollector restart
